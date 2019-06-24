@@ -101,7 +101,7 @@ Obligatory JSON file to be placed in a integration folder.
 ### Dependencies
 All third-party packages (packages not included in Python 3.7 standard library) should be deployed along with plugin files. Use the folowing command structure:
 
-```pip install DEP --target DIR --implementation cp --python-version 37```
+```pip install DEP --target DIR --implementation cp --python-version 37 --only-binary=:all: --platform=win32```
 
 For example plugin that uses *requests* has structure as follows:
 
